@@ -1,0 +1,43 @@
+Register Author
+POST: http://localhost:8080/api/authors/register
+{
+    "email": "john@gmail.com",
+    "password": "test"
+}
+---------------------------------
+Add Book by Author
+POST: http://localhost:8080/api/authors/1/books
+{
+    "title": "test title 2",
+    "genre": "test genre 2",
+    "price": 1.99,
+    "description": "test book 2"
+}
+----------------------------------
+Get all books of an Author
+GET: http://localhost:8080/api/authors/1/books
+----------------------------------
+Update All details of a Book
+PUT: http://localhost:8080/api/books/3
+{
+    "title": "up test title 2",
+    "genre": "up test genre 2",
+    "price": 1.99,
+    "description": "up test book 2"
+}
+-----------------------------------
+Update Book Price
+PATCH: http://localhost:8080/api/books/update-price/3
+{
+    "price": 9.99
+}
+----------------------------------
+Delete a Book
+DELETE: http://localhost:8080/api/books/3
+-----------------------------------
+Search Book by Book Title text
+GET: http://localhost:8080/api/books/search?searchText=up
+-----------------------------------
+Get Author Profile
+GET: http://localhost:8080/api/authors/1/profile
+-------------------------------------------------
