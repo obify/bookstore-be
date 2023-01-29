@@ -1,8 +1,10 @@
 Register Author
 POST: http://localhost:8080/api/authors/register
 {
-    "email": "john@gmail.com",
-    "password": "test"
+    "name": "Peter Parker",
+    "email": "peter@gmail.com",
+    "phone": "9798977989",
+    "password": "secret"
 }
 ---------------------------------
 Add Book by Author

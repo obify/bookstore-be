@@ -2,7 +2,6 @@ package com.mycompany.bookauthor.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.mycompany.bookauthor.entity.BookEntity;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,5 +18,5 @@ public class AuthorDTO {
     private String email;
     private String phone;
     private String password;
-    private List<BookEntity> books;
+    private List<BookDTO> books;
 }
